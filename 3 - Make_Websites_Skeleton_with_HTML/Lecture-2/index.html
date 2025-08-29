@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture-2: About Forms</title>
+</head>
+<body>
+
+    <!-- Main content section containing the form -->
+    <section>
+        <!-- Form begins: POST method sends data to /Login -->
+        <form method="post" action="/Login">
+
+            <!-- Email Input -->
+            <label for="Email">Email:</label>
+            <input 
+                id="Email" 
+                type="email" 
+                name="Email" 
+                placeholder="adityavshk008@gmail.com"
+            >
+            <br><br>
+
+            <!-- Password Input -->
+            <label for="password">Password:</label>
+            <input 
+                id="password" 
+                type="password" 
+                name="Password"
+            >
+            <br><br>
+
+            <!-- Number Input -->
+            <label for="number">Number:</label>
+            <input 
+                id="number" 
+                type="number" 
+                name="contact No"
+            >
+            <br><br>
+
+            <!-- Gender Selection Using Radio Buttons -->
+            <dl>
+                <dt>Pick a Gender</dt>
+                <dd>
+                    <input 
+                        id="m-box" 
+                        type="radio" 
+                        name="gender" 
+                        value="male"
+                    >
+                    <label for="m-box">Male</label>
+                    <br>
+                    <input 
+                        id="f-box" 
+                        type="radio" 
+                        name="gender" 
+                        value="female"
+                    >
+                    <label for="f-box">Female</label>
+                </dd>
+            </dl>
+
+            <!-- Submit Buttons -->
+            <input type="submit" value="Submit">
+            <button type="submit">Click Me !!!</button>
+        </form>
+    </section>
+
+    <!-- Footer section (currently empty) -->
+    <footer></footer>
+
+</body>
+</html>

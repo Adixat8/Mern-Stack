@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form Assignment</title>
+</head>
+<body>
+    <!-- 
+        ==============================
+        STUDENT REGISTRATION FORM
+        ==============================
+        - <form> : collects user input
+        - action : URL where form data is sent after submission
+        - method : "post" (secure, hides data) OR "get" (visible in URL)
+        - <fieldset> : groups related inputs together
+        - <legend> : caption/title for each fieldset
+        - <label> : labels an input field (accessible & clickable)
+        - <input>, <textarea> : fields to collect data
+        - <button type="submit"> : submits the form
+    -->
+
+    <header>
+        <h1>This is a Student Registration Form Project using only HTML</h1>
+        <hr>
+    </header>
+
+    <main>
+        <h2>Student Registration Form</h2>
+        <h3>Please fill out the form below to register.</h3>
+        <hr>
+
+        <!-- Main Form Starts -->
+        <section>
+            <form action="http://www.studentForm.com" method="post">
+
+                <!-- PERSONAL INFORMATION SECTION -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <!-- First Name -->
+                    <p>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="First-Name" id="firstName" required>
+                    </p>
+
+                    <!-- Last Name -->
+                    <p>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="Last-Name" id="lastName" required>
+                    </p>
+
+                    <!-- Date of Birth -->
+                    <p>
+                        <label for="DOB">Date of Birth:</label>
+                        <input type="date" name="DOB" id="DOB" required>
+                    </p>
+
+                    <!-- Gender (Radio Buttons) -->
+                    <p>
+                        <label for="Gender">Gender:</label>
+                        <input type="radio" id="male" name="Gender" value="Male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="Gender" value="Female">
+                        <label for="female">Female</label>
+                    </p>
+
+                    <!-- Email -->
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="Email" required>
+                    </p>
+
+                    <!-- Phone Number -->
+                    <p>
+                        <label for="no">Phone Number:</label>
+                        <input type="tel" id="no" name="Phone-Number" pattern="[0-9]{10}" placeholder="10-digit number">
+                    </p>
+                </fieldset>
+                <hr>
+
+                <!-- ADDRESS INFORMATION SECTION -->
+                <fieldset>
+                    <legend>Address Information</legend>
+
+                    <!-- Address (Multiline Text Area) -->
+                    <p>
+                        <label for="address">Address:</label><br>
+                        <textarea id="address" name="User-Address" rows="4" cols="30"></textarea>
+                    </p>
+
+                    <!-- City -->
+                    <p>
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="City">
+                    </p>
+
+                    <!-- State -->
+                    <p>
+                        <label for="state">State:</label>
+                        <input type="text" id="state" name="State">
+                    </p>
+
+                    <!-- ZIP Code -->
+                    <p>
+                        <label for="Zip-code">ZIP Code:</label>
+                        <input type="number" id="Zip-code" name="Zip-Code">
+                    </p>
+                </fieldset>
+                <hr>
+
+                <!-- EDUCATIONAL INFORMATION SECTION -->
+                <fieldset>
+                    <legend>Educational Information</legend>
+
+                    <!-- High School -->
+                    <p>
+                        <label for="high-school">High School:</label>
+                        <input type="text" id="high-school" name="High-School">
+                    </p>
+
+                    <!-- GPA -->
+                    <p>
+                        <label for="GPA">GPA:</label>
+                        <input type="number" id="GPA" name="GPA" step="0.01" min="0" max="10">
+                    </p>
+
+                    <!-- Intended Major -->
+                    <p>
+                        <label for="Intended-major">Intended Major:</label>
+                        <input type="text" id="Intended-major" name="Intended-Major">
+                    </p>
+
+                    <!-- Year of Graduation -->
+                    <p>
+                        <label for="YOG">Year of Graduation:</label>
+                        <input type="text" id="YOG" name="Year-of-Graduation">
+                    </p>
+                </fieldset>
+                <hr>
+
+                <!-- ADDITIONAL INFORMATION SECTION -->
+                <fieldset>
+                    <legend>Additional Information</legend>
+
+                    <!-- Hobbies -->
+                    <p>
+                        <label for="interest-hobbies">Interests & Hobbies:</label>
+                        <input type="text" name="User-Hobbies" id="interest-hobbies">
+                    </p>
+
+                    <!-- Additional Comments -->
+                    <p>
+                        <label for="additional-comments">Additional Comments:</label><br>
+                        <textarea id="additional-comments" name="Additional-Comments" rows="3" cols="30"></textarea>
+                    </p>
+                </fieldset>
+                <hr>
+
+                <!-- SUBMIT BUTTON -->
+                <button type="submit">Register</button>
+                <hr>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Student Registration. All rights reserved.</p>
+    </footer>
+</body>
+</html>
