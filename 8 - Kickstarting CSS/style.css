@@ -1,0 +1,126 @@
+/* =========================
+   Universal Selector
+   =========================
+   - Targets every element on the page.
+   - Commonly used to reset or apply base styles.
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   Class & ID Selectors
+   =========================
+   - Class (.) → can be reused on multiple elements.
+   - ID (#) → unique, used only once per page.
+*/
+#special {
+  color: darkred;
+  font-weight: bold;
+}
+
+.highlight {
+  background-color: yellow;
+  padding: 5px;
+}
+
+/* =========================
+   Attribute Selectors
+   =========================
+   - Target elements based on their attributes.
+   - ^= → starts with, *= → contains, $= → ends with.
+*/
+a[href^="https"] {
+  color: blue; /* All links starting with https */
+}
+
+a[href*="facebook"] {
+  color: darkblue; /* All links containing "facebook" */
+}
+
+a[href^="mailto"] {
+  color: green; /* Email links */
+}
+
+/* =========================
+   Combinators
+   =========================
+   - Descendant (A B): selects all B inside A
+   - Child (A > B): selects only direct children
+   - Adjacent (A + B): selects first sibling immediately after A
+   - General sibling (A ~ B): selects all siblings after A
+*/
+.parent span {
+  color: purple; /* All spans inside .parent */
+}
+
+.parent > span {
+  font-weight: bold; /* Only direct child spans */
+}
+
+.parent p + span {
+  color: orange; /* The span immediately after a <p> */
+}
+
+.parent p ~ span {
+  text-decoration: underline; /* All spans after any <p> */
+}
+
+/* =========================
+   Pseudo-classes
+   =========================
+   - Define states of elements.
+   - Common for links: LVHA (Link, Visited, Hover, Active).
+   - Structural: first-child, last-child, nth-child().
+*/
+a:link {
+  color: teal; /* Default state */
+}
+
+a:visited {
+  color: brown; /* After visiting */
+}
+
+a:hover {
+  color: red; /* On hover */
+}
+
+a:active {
+  color: pink; /* While being clicked */
+}
+
+/* nth-child examples */
+ul li:first-child {
+  font-weight: bold;
+}
+ul li:last-child {
+  color: darkgreen;
+}
+ul li:nth-child(2) {
+  font-style: italic;
+}
+
+/* Hover effect on button */
+button:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+/* =========================
+   Pseudo-elements
+   =========================
+   - Allow styling specific parts of an element.
+   - ::before → inserts content before element
+   - ::after → inserts content after element
+*/
+.pseudo::before {
+  content: "👉 ";
+  color: red;
+}
+.pseudo::after {
+  content: " ✅";
+  color: green;
+}
+

@@ -1,0 +1,16 @@
+// Colors resources 
+link 1 - https://coolors.co/
+link 2 - https://color.adobe.com/explore  
+
+// Fonts 
+link 1 - https://fontpair.co/all 
+link 2 - https://fonts.google.com/ 
+
+
+// Best CSS Documentations 
+
+link 1 - https://css-tricks.com/ 
+link 2 - https://developer.mozilla.org/en-US/docs/Web/CSS 
+
+
+
